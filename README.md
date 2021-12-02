@@ -20,14 +20,16 @@ The `Weaver` leverages [`Apache NiFi`](https://nifi.apache.org/) to distribute d
         4. [Source Manager](#source-manager)
         5. [Complex Publisher](#complex-publisher)
         6. [Experimenter](#experimenter)
-
 2. [Scenarios](#scenarios)
     1. [All-in-one scenario](#all-in-one-scenario)
     2. [Data Source specific scenarios](#data-source-specific-scenarios)
         1. [Prometheus](#prometheus-based-data-sources)
         2. [gNMI](#gNMI-based-data-sources-(Arista-cEOS))
         3. [Kafka](#kafka-based-data-sources)
-
+3. [NGSI-LD Information Models](#ngsi-ld-information-models)
+4. [SDA Orchestration](#sda-orchestration)
+5. [Stream processing aplications management](#stream-processing-aplications-management)
+6. [Postman collections](#postman-collections)
 
 # Prototype
 
@@ -163,6 +165,9 @@ docker exec -it complex-publisher python3 /5GEVE-publisher/publisher.py kafka:90
 docker-compose down
 ```
 
+# NGSI-LD Information Models
+
+This repository contains NGSI-LD information models that characterize those data sources currently supported by the semantic data aggregator (SDA). More information can be found [here](docs/semantic-metrics-datamodels/README.md)
 
 # SDA Orchestration
 
